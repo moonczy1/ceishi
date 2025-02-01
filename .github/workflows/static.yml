@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>手机界面</title>
+    <style>
+        .phone {
+            width: 280px;
+            height: 540px;
+            border: 18px solid #000000;
+            border-left-width: 10px;
+            border-right-width: 10px;
+            border-radius: 28px;
+            margin: auto;
+        }
+        .content {
+            width: 100%;
+            height: 540px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            background-color: #F0F0F0;
+        }
+        .top {
+            width: 100%;
+            background-color: #2f5df2;
+            line-height: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+        a {
+            margin-left: 6px;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        span {
+            margin-left: 155px;
+            color: #FFFFFF;
+        }
+        /* TODO 设置类名为in的元素样式，要求宽度260px，高度136px，背景颜色#FFFFFF，
+          文本居中对齐，上下外边距为20px，左右外边距为auto，圆角5px */
+        
+        .in{
+             width: 260px;
+            height: 136px;
+            background-color:#FFFFFF;
+            border-radius: 5px;
+            margin:20px auto;
+            text-align: center;
+        }
+    
+        img {
+            border-radius: 5px;
+        }
+        /* TODO 设置当鼠标悬停在类名为in的盒子上时的效果，要求：
+          1.使用转换属性，将元素水平移动0，垂直移动-10px，
+          2.设置阴影x偏移量为0，y偏移量为10px，阴影模糊半径为10px，阴影扩散半径为0，阴影颜色为#999999 */
+        .in:hover{
+              transform: translate(0, -10px);
+            box-shadow: 0px 10px 10px 0 #999999;
+
+        }
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="phone">
+        <div class="content">
+            <div class="top">
+                <a href="#">我的课程</a>
+                <span>12:00</span>
+            </div>
+            <div class="in">
+                <img src="https://nocturne.bczcdn.com/img/1609233010059_47814/base_pro.jpg" width="260">
+                <p>Python入门课程Pro</p>
+            </div>
+            <div class="in">
+                <img src="http://nocturne.bczcdn.com/img/1646644675891_31336/website.jpg" width="260">
+                <p>网页开发基础</p>
+            </div>
+            <div class="in">
+                <img src="https://nocturne.bczcdn.com/img/1603793039592_80977/headmini.png" width="260">
+                <p>Python数据分析</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
